@@ -12,7 +12,10 @@ from pyspark.sql.functions import *
 
 # A simple Dict with all URLs to download data
 url_endpoints = {'url_pop_mun_sp' : "https://servicodados.ibge.gov.br/api/v3/agregados/9520/periodos/-6/variaveis/93?localidades=N6[N3[35]]",
-                  'url_localidade_mun_sp' : "https://servicodados.ibge.gov.br/api/v1/localidades/estados/SP/municipios"}
+                  'url_localidade_mun_sp' : "https://servicodados.ibge.gov.br/api/v1/localidades/estados/SP/municipios",
+                  'url_pib_mun_sp' : "https://servicodados.ibge.gov.br/api/v3/agregados/5938/periodos/2019|2020|2021/variaveis/37?localidades=N6[N3[35]]",
+                'url_idh_uf_sp': "https://servicodados.ibge.gov.br/api/v1/pesquisas/37/resultados/33",
+                 'url_idh_mun_sp': "https://servicodados.ibge.gov.br/api/v1/pesquisas/37/resultados/N6[N3[35]]"}
 
 # Root Delta table directory
 delta_root_dir = "/Users/dal/Documents/desafio_ibge/data/delta_dir"
